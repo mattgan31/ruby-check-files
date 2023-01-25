@@ -9,7 +9,7 @@ if path == ""
     return
 end
 
-Dir.glob("#{path}/*") do |file_path|
+Dir.glob("#{path}/**/*") do |file_path|
     file = File.basename(file_path, ".*")
     files.append(file)
 end 
